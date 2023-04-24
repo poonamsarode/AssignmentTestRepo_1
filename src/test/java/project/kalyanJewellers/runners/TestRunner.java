@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features = "classpath:features",
 		glue="project.kalyanJewellers.stepdefs",
-		tags="@ui",
+		tags="@SocialMediaIcons",
 		plugin = {"pretty",
 	            "html:target/html/htmlreport.html",
 	            "json:target/json/file.json",

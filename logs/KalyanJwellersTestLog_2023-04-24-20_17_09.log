@@ -1,0 +1,9 @@
+2023-Apr-24 20:17:12 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 20:17:13 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 20:17:24 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-24 20:17:26 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 20:17:26 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 20:17:30 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-24 20:17:31 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 20:17:32 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 20:17:34 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed

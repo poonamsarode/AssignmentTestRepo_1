@@ -1,0 +1,38 @@
+2023-Apr-20 17:45:29 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got set
+2023-Apr-20 17:45:29 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got maximize
+2023-Apr-20 17:45:29 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser implicit time out set to -> 20
+2023-Apr-20 17:45:41 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Browser got invoked with URL as -> https://www.candere.com/
+2023-Apr-20 17:45:42 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Page Title validation is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-20 17:45:42 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Application title is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-20 17:45:42 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-20 17:45:44 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Waiting for waibElement -> elementSearchBox to be clickable 
+2023-Apr-20 17:45:44 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - sending keys into webElement ->  searchBoxElement 
+2023-Apr-20 17:45:46 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Clicking on a search button
+2023-Apr-20 17:45:48 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got closed
+2023-Apr-20 17:45:50 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got set
+2023-Apr-20 17:45:50 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got maximize
+2023-Apr-20 17:45:50 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser implicit time out set to -> 20
+2023-Apr-20 17:46:02 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Browser got invoked with URL as -> https://www.candere.com/
+2023-Apr-20 17:46:04 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Page Title validation is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-20 17:46:04 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-20 17:46:06 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Waiting for waibElement -> elementSearchBox to be clickable 
+2023-Apr-20 17:46:07 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - sending keys into webElement ->  searchBoxElement 
+2023-Apr-20 17:46:08 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Clicking on a search button
+2023-Apr-20 17:46:10 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Waiting for waibElement -> ProductsName to be clickable 
+2023-Apr-20 17:46:11 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Clicking on a product 
+2023-Apr-20 17:46:13 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Product Description is displayed in new tab 
+2023-Apr-20 17:46:16 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got closed
+2023-Apr-20 17:46:18 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got set
+2023-Apr-20 17:46:18 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got maximize
+2023-Apr-20 17:46:18 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser implicit time out set to -> 20
+2023-Apr-20 17:46:29 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Browser got invoked with URL as -> https://www.candere.com/
+2023-Apr-20 17:46:30 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Page Title validation is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-20 17:46:30 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-20 17:46:33 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Waiting for waibElement -> elementSearchBox to be clickable 
+2023-Apr-20 17:46:34 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - sending keys into webElement ->  searchBoxElement 
+2023-Apr-20 17:46:35 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Clicking on a search button
+2023-Apr-20 17:46:37 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Waiting for waibElement -> ProductsName to be clickable 
+2023-Apr-20 17:46:37 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Clicking on a product 
+2023-Apr-20 17:46:39 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Product Description is displayed in new tab 
+2023-Apr-20 17:46:52 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - user is select Ring size 
+2023-Apr-20 17:46:55 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got closed

@@ -1,0 +1,14 @@
+2023-Apr-22 16:01:21 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Headless Chrome Browser invoked
+2023-Apr-22 16:01:21 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-22 16:01:35 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Browser got invoked with URL as -> https://www.candere.com/
+2023-Apr-22 16:01:35 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Page Title validation is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-22 16:01:35 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-22 16:01:37 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Waiting for waibElement -> elementSearchBox to be clickable 
+2023-Apr-22 16:01:38 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - sending keys into webElement ->  searchBoxElement 
+2023-Apr-22 16:01:38 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Clicking on a search button
+2023-Apr-22 16:01:40 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Waiting for waibElement -> ProductsName to be clickable 
+2023-Apr-22 16:01:41 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Clicking on a product 
+2023-Apr-22 16:01:43 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Product Description is displayed in new tab 
+2023-Apr-22 16:01:51 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - user is select Ring size 
+2023-Apr-22 16:01:53 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Price updated Notification is displyed after selecting the size -> [[ChromeDriver: chrome on WINDOWS (a0ee70a7587fbd1200367015a88c330a)] -> xpath: //div[text()='Price updated']]
+2023-Apr-22 16:01:53 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed

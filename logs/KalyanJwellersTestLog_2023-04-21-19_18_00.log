@@ -1,0 +1,15 @@
+2023-Apr-21 19:18:03 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got set
+2023-Apr-21 19:18:03 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got maximize
+2023-Apr-21 19:18:03 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser implicit time out set to -> 20
+2023-Apr-21 19:18:29 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Browser got invoked with URL as -> https://www.candere.com/
+2023-Apr-21 19:18:29 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Page Title validation is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-21 19:18:29 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-21 19:18:31 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Waiting for waibElement -> elementSearchBox to be clickable 
+2023-Apr-21 19:18:32 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - sending keys into webElement ->  searchBoxElement 
+2023-Apr-21 19:18:33 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Clicking on a search button
+2023-Apr-21 19:18:35 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Waiting for waibElement -> ProductsName to be clickable 
+2023-Apr-21 19:18:35 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Clicking on a product 
+2023-Apr-21 19:18:37 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Product Description is displayed in new tab 
+2023-Apr-21 19:18:46 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - user is select Ring size 
+2023-Apr-21 19:18:48 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Price updated Notification is displyed after selecting the size -> [[ChromeDriver: chrome on WINDOWS (e493b85b2218b29ef6811c49299ef952)] -> xpath: //div[text()='Price updated']]
+2023-Apr-21 19:18:49 PM [main] INFO  project.kalyanJewellers.stepdefs.StepDefs - Browser got closed

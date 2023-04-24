@@ -1,0 +1,46 @@
+2023-Apr-24 18:38:24 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 18:38:24 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 18:38:35 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Browser got invoked with URL as -> https://www.candere.com/
+2023-Apr-24 18:38:36 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Page Title validation is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-24 18:38:37 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Application title is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-24 18:38:37 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-24 18:38:39 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Waiting for waibElement -> elementSearchBox to be clickable 
+2023-Apr-24 18:38:41 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - sending keys into webElement ->  searchBoxElement 
+2023-Apr-24 18:38:41 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Clicking on a search button
+2023-Apr-24 18:38:43 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsListingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-24 18:38:43 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsListingPageObjects - Assertion for expected condition title is 
+2023-Apr-24 18:38:46 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-24 18:38:48 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 18:38:48 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 18:38:58 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Browser got invoked with URL as -> https://www.candere.com/
+2023-Apr-24 18:39:00 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Page Title validation is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-24 18:39:00 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-24 18:39:01 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Waiting for waibElement -> elementSearchBox to be clickable 
+2023-Apr-24 18:39:03 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - sending keys into webElement ->  searchBoxElement 
+2023-Apr-24 18:39:04 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Clicking on a search button
+2023-Apr-24 18:39:06 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Waiting for waibElement -> ProductsName to be clickable 
+2023-Apr-24 18:39:06 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Clicking on a product 
+2023-Apr-24 18:39:17 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-24 18:39:19 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 18:39:19 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 18:39:33 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Browser got invoked with URL as -> https://www.candere.com/
+2023-Apr-24 18:39:34 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Assertion for Page Title validation is passed with expected as -> Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Storeand actual as ->Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store
+2023-Apr-24 18:39:34 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - WebDriverWait time out set to ->20
+2023-Apr-24 18:39:36 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Waiting for waibElement -> elementSearchBox to be clickable 
+2023-Apr-24 18:39:37 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - sending keys into webElement ->  searchBoxElement 
+2023-Apr-24 18:39:38 PM [main] INFO  project.kalyanJewellers.pageobjects.LandingPageObjects - Clicking on a search button
+2023-Apr-24 18:39:40 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Waiting for waibElement -> ProductsName to be clickable 
+2023-Apr-24 18:39:40 PM [main] INFO  project.kalyanJewellers.pageobjects.ProductsDisPageObjects - Clicking on a product 
+2023-Apr-24 18:39:51 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-24 18:39:53 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 18:39:53 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 18:40:14 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-24 18:40:15 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 18:40:16 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 18:40:36 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-24 18:40:38 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 18:40:38 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 18:40:54 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-24 18:40:55 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 18:40:55 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 18:41:05 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed

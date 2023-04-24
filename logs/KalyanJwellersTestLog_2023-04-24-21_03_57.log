@@ -1,0 +1,3 @@
+2023-Apr-24 21:04:05 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Chrome Browser invoked
+2023-Apr-24 21:04:05 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-24 21:04:15 PM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed

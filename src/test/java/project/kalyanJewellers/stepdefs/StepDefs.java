@@ -9,9 +9,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -22,140 +27,236 @@ import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import project.kalyanJewellers.core.WebDriverFactory;
+import project.kalyanJewellers.pageobjects.LandingPageObjects;
+import project.kalyanJewellers.pageobjects.ProductsDisPageObjects;
+import project.kalyanJewellers.pageobjects.ProductsListingPageObjects;
 
 public class StepDefs {
 
 	
 	 private static final Logger logger = LogManager.getLogger(StepDefs.class);
+
+	private static final String String = null;
 		
 	 WebDriver driver;
 	 String base_url = "https://www.candere.com/";
 	 int implicit_wait_timeout_in_sec = 20;
+	 WebDriverWait webDriverWait;
 	 Scenario scn;
 	
+	 LandingPageObjects landingPageObjects;
+	 ProductsListingPageObjects productsListingPageObjects;
+	 ProductsDisPageObjects productsDisPageObjects;
+	 
 	 @Before 
-	 public void setUp(Scenario scn){
+	 public void setUp(Scenario scn) throws Exception{
 		    this.scn = scn;
-	        driver = new ChromeDriver();
-	        logger.info("Browser got set");
-	        driver.manage().window().maximize();
-	        logger.info("Browser got maximize");
-	        driver.manage().timeouts().implicitlyWait(implicit_wait_timeout_in_sec, TimeUnit.SECONDS);
-	        logger.info("Browser implicit time out set to -> " + implicit_wait_timeout_in_sec);
+		    String browserName = WebDriverFactory.getBrowserName();
+		    driver = WebDriverFactory.getWebDriverForBrowser(browserName);
 
-	        scn.log("Browser got invoked");
+	        
+//	         Initialize class Objects
+	        landingPageObjects = new LandingPageObjects(driver, webDriverWait);
+	        productsListingPageObjects = new ProductsListingPageObjects(driver, webDriverWait);
+	        productsDisPageObjects = new ProductsDisPageObjects(driver, webDriverWait);
 	    }
 	 
-	 @After
+	 @After (order=1)
 	    public void tearDwon()
-	 {
-	        driver.quit();
-	        logger.info("Browser got closed");
-
+	 {     
+		 WebDriverFactory.quitDriver();
 	        scn.log("Browser got closed");
 	    }
-
-/*@Given("User opean the browser")
-public void user_opean_the_browser() {
-	  driver = new ChromeDriver();
-      driver.manage().window().maximize();
-      driver.manage().timeouts().implicitlyWait(implicit_wait_timeout_in_sec, TimeUnit.SECONDS);
-    }*/
+	 
+	 @After(order=2)
+	  public void captureScreenShot(Scenario scn)
+	  {
+			    if (scn.isFailed()) {
+			    	TakesScreenshot  scrnShot = (TakesScreenshot )driver;
+			        byte[] data = scrnShot.getScreenshotAs(OutputType.BYTES);
+			        scn.attach(data, "image/png","Failed Step Name: " + scn.getName());
+			    }else{
+			        scn.log("Test case is passed, no screen shot captured");
+			    }
+	  }			    
 
 
 @Given("User navigated to the home application url")
 public void user_navigated_to_the_home_application_url() {
-	 driver.get(base_url);
-     logger.info("Browser got invoked with URL as -> " + base_url );
-     String expected = "Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store";
-     String actual =driver.getTitle();
-     Assert.assertEquals("Page Title validation",expected,actual);
-     logger.info("Assertion for Page Title validation is passed with expected as -> " + expected + "and actual as ->" + actual);
-
-     
+	 landingPageObjects.validateUserIsOnLandingPage(base_url);
      scn.log("User navigated to the home application url");
    
 }
 
 @Given("Application title is {string}")
 public void application_title_is(String string) {
-   
-     String expected = "Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store";
-     String actual =driver.getTitle();
-     Assert.assertEquals("Page Title validation",expected,actual);
-     logger.info("Assertion for Application title is passed with expected as -> " + expected + "and actual as ->" + actual);
-
-     scn.log("Application title is");
+	landingPageObjects.applicationTitleIs(string);
+	scn.log("Application title is");
         
 }
 
 @When("User search for a product {string}")
-public void user_search_for_a_product(String productName) {
-	
-	 WebDriverWait webDriverWait = new WebDriverWait(driver,20);
-	 logger.info("WebDriverWait time out set to ->" + 20);
-
-     WebElement elementSearchBox = webDriverWait.until(ExpectedConditions.elementToBeClickable(By.id("search")));
-     logger.info("Waiting for waibElement -> elementSearchBox to be clickable ");
-
-
-     elementSearchBox.sendKeys(productName);
-     logger.info("sending keys into webElement ->  elementSearchBox ");
-
-     driver.findElement(By.xpath("//div[@class='form-search']")).click();
-     logger.info("Clicking on a search button");
-
+public void user_search_for_a_product(String productName) throws InterruptedException {
+	landingPageObjects.searchproduct(productName);
     scn.log("User search for a product");
+    Thread.sleep(2000);
 }
 
-@Then("Search result is displyed")
-public void search_result_is_displyed() {
-	WebDriverWait webDriverWait1 = new WebDriverWait(driver,20);
-    logger.info("WebDriverWait time out set to ->" + 20);
 
-    webDriverWait1.until(ExpectedConditions.titleIs("Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store"));
-
-    //Assertion for Page Title
-    Assert.assertEquals("Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store", driver.getTitle());
-    logger.info("Assertion for expected condition title is ");
-
+@Then("Search result is displyed {string}")
+public void search_result_is_displyed(String productName) throws InterruptedException {
+	productsListingPageObjects.validateSearchResult(productName);
     scn.log("Search result is displyed");
+    Thread.sleep(2000);
 }
    
 @When("User Click on product {string}")
-public void user_click_on_product(String string) {
-	 List<WebElement> listOfProducts = driver.findElements(By.xpath("//div[text()='Majestic Solitaire Diamond Ring']"));
-     logger.info("Waiting for list of waibElement -> listOfProducts to be clickable ");
-
-	 listOfProducts.get(0).click();
-     logger.info("Clicking on a product ");
-
+public void user_click_on_product(String string) throws InterruptedException {
+	productsDisPageObjects.clickingOnProduct(string);
 	 scn.log("User Click on product");
+	 Thread.sleep(2000);
 
 }
 
 @Then("Product Description is displayed in new tab")
-public void product_description_is_displayed_in_new_tab() {
-    
-	  Set<String> handles = driver.getWindowHandles();// get all the open windows
-      Iterator<String> it = handles.iterator(); // get the iterator to iterate the elements in set
-      String original = it.next();//gives the parent window id
-      String prodDescp = it.next();//gives the child window id
-      driver.switchTo().window(prodDescp);
+public void product_description_is_displayed_in_new_tab() throws InterruptedException {
+	  productsDisPageObjects.prodDesDisplayedInNewTab();
       scn.log("Product Description is displayed in new tab");
+
+      Thread.sleep(2000);
       
  	
 }
 @Then("Select the size drop down")
-public void select_the_size_drop_down() {
-	
- 	WebElement sizeDropDwn = driver.findElement(By.xpath("//select[@Class='type_select']"));
-	Select size = new Select( sizeDropDwn);
-	size.selectByVisibleText("13");
+public void select_the_size_drop_down() throws InterruptedException {
+	productsDisPageObjects.SelectSizeOfProd();
 	scn.log("Select the size drop down");
-	
+	Thread.sleep(2000);
 }
 
+@Then("Notification is displyed {string}")
+public void notification_is_displyed(String string) {
+	productsDisPageObjects.NotificationIsDisplyed(string);
+	scn.log("Notification text is generated After select price");
+
 }
+
+
+@When("user scroll dwon to the button landing page of the application")
+public void user_scroll_dwon_to_the_button_landing_page_of_the_application() throws InterruptedException {
+	WebElement aboutUsElement = driver.findElement(By.xpath("//p[text()='ABOUT US']"));
+
+/*	JavascriptExecutor js = ((JavascriptExecutor) driver);
+	Thread.sleep(2000); 
+	js.executeScript("arguments[0].scrollIntoView();", aboutUsElement);
+	Thread.sleep(2000); 
+	logger.info("page scroll down till about us");*/
+
+	  
+   }
+
+@When("the categories having the option {string}")
+public void the_categories_having_the_option(String string) throws InterruptedException {
+	WebElement aboutUsElement = driver.findElement(By.xpath("//p[text()='ABOUT US']"));
+	Assert.assertEquals(true, aboutUsElement.getText());
+	logger.info("Assertion passed about us section validated");
+	scn.log("Validating  about us section Section");
+	
+	 Thread.sleep(2000);
+   
+}
+@Then("under the about us category below options are visible")
+public void under_the_about_us_category_below_options_are_visible(List<String> expectedaboutUsOptionsElement) throws InterruptedException {
+	List<WebElement> aboutUsElement = driver.findElements(By.xpath("//a[@class='second our_compamy__']//parent::nav/a"));
+
+	for (int i = 0; i<expectedaboutUsOptionsElement.size(); i++)
+	{
+		if(expectedaboutUsOptionsElement.get(i).equals(aboutUsElement.get(i).getText()))
+		{
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			Assert.fail();
+		}
+		logger.info("List of About us validated");
+		scn.log("List of About us validated");
+		
+		 Thread.sleep(2000);
+	}
+	   
+	}
+
+
+@Then("Browser is closed")
+public void browser_is_closed() throws InterruptedException {
+	driver.quit();
+  Thread.sleep(2000);
+}
+
+
+
+@When("validate the follow us option with social media icons")
+public void validate_the_follow_us_option_with_social_media_icons() throws InterruptedException {
+	WebElement followUsElement = driver.findElement(By.xpath("//p[text()='FOLLOW US']"));
+	Assert.assertEquals(true, followUsElement.getText());
+	logger.info("Assertion passed FOLLOW US section validated");
+	scn.log("Validating FOLLOW US Section");
+	
+	 Thread.sleep(2000);
+   
+}
+
+@When("click on social media icons {string}")
+public void click_on_social_media_icons(String string) {
+	WebElement FBIcon = driver.findElement(By.xpath("//a[@class='social_icons__ fb']"));
+	FBIcon.click();
+	
+	WebElement InstaIcon = driver.findElement(By.xpath("//a[@class='social_icons__ insta']"));
+	InstaIcon.click();
+	
+	WebElement TwiterIcon = driver.findElement(By.xpath("//a[@class='social_icons__ twitter']"));
+	TwiterIcon.click();
+	
+	
+	
+	
+	
+	
+	//h1[text()='Candere by Kalyan Jewellers']fb
+	//h2[text()='canderejewellery']      insta
+	//span[@class='css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0']//span[text()='Candere By Kalyan Jewellers'] twitter
+	
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 

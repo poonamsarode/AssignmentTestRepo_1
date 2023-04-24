@@ -3,14 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-04-18T06:56:19.502Z",
+        "start_timestamp": "2023-04-24T18:34:26.436Z",
         "before": [
           {
-            "output": [
-              "Browser got invoked"
-            ],
             "result": {
-              "duration": 6957866700,
+              "duration": 21880197900,
               "status": "passed"
             },
             "match": {
@@ -18,17 +15,27 @@
             }
           }
         ],
-        "line": 5,
-        "name": "User is able to opean the browser,navigate to the URL and Search for Product",
+        "line": 51,
+        "name": "validate the footer links on landing page of applications",
         "description": "",
-        "id": "e-commerce-project-web-site-health-check;user-is-able-to-opean-the-browser-navigate-to-the-url-and-search-for-product",
+        "id": "e-commerce-project-web-site-health-check;validate-the-footer-links-on-landing-page-of-applications;;2",
         "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: MicrosoftEdge\u003d112.0.1722.58)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-4HSKB02\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.58, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60944}, msedge: {msedgedriverVersion: 112.0.1722.58 (4dc3f55bfaec..., userDataDir: C:\\Users\\Dell\\AppData\\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: e2f33c0db840ed1977429fdb1af4f985\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat project.kalyanJewellers.stepdefs.StepDefs.captureScreenShot(StepDefs.java:77)\r\n",
+              "duration": 90951600,
+              "status": "failed"
+            },
+            "match": {
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.captureScreenShot(io.cucumber.java.Scenario)"
+            }
+          },
           {
             "output": [
               "Browser got closed"
             ],
             "result": {
-              "duration": 846382600,
+              "duration": 416442700,
               "status": "passed"
             },
             "match": {
@@ -37,78 +44,59 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
-            "output": [
-              "User navigated to the home application url"
-            ],
             "result": {
-              "duration": 11744994100,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//p[text()\u003d\u0027ABOUT US\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-4HSKB02\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat project.kalyanJewellers.stepdefs.StepDefs.user_scroll_dwon_to_the_button_landing_page_of_the_application(StepDefs.java:148)\r\n\tat ✽.user scroll dwon to the button landing page of the application(classpath:features/HelthCheak.feature:45)\r\n",
+              "duration": 16359158800,
+              "status": "failed"
             },
-            "line": 7,
-            "name": "User navigated to the home application url",
+            "line": 45,
+            "name": "user scroll dwon to the button landing page of the application",
             "match": {
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_navigated_to_the_home_application_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "output": [
-              "Application title is"
-            ],
-            "result": {
-              "duration": 456720300,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Application title is \"Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Online Jewellery Shopping India | Candere By Kalyan Jewellers | Most Trusted Online Jewellery Store\"",
-                  "offset": 21
-                }
-              ],
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.application_title_is(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "output": [
-              "User search for a product"
-            ],
-            "result": {
-              "duration": 3955142200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "User search for a product \"majestic solitaire diamond ring\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"majestic solitaire diamond ring\"",
-                  "offset": 26
-                }
-              ],
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_search_for_a_product(java.lang.String)"
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_scroll_dwon_to_the_button_landing_page_of_the_application()"
             },
             "keyword": "When "
           },
           {
-            "output": [
-              "Search result is displyed"
-            ],
             "result": {
-              "duration": 45970200,
-              "status": "passed"
+              "duration": 1998500,
+              "status": "skipped"
             },
-            "line": 10,
-            "name": "Search result is displyed",
+            "line": 46,
+            "name": "validate the follow us option with social media icons",
             "match": {
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.search_result_is_displyed()"
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.validate_the_follow_us_option_with_social_media_icons()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22988100,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "click on social media icons \"\u003cSocial media Name\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cSocial media Name\u003e\"",
+                  "offset": 28
+                }
+              ],
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.click_on_social_media_icons(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999900,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Validating the social media Icons With Expected \"canderejewellery\" and \"Candere by Kalyan Jewellers\"",
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -120,19 +108,16 @@
             "name": "@HelthCheak"
           },
           {
-            "name": "@Search"
+            "name": "@SocialMediaIcons"
           }
         ]
       },
       {
-        "start_timestamp": "2023-04-18T06:56:43.899Z",
+        "start_timestamp": "2023-04-24T18:35:05.610Z",
         "before": [
           {
-            "output": [
-              "Browser got invoked"
-            ],
             "result": {
-              "duration": 1972299200,
+              "duration": 2549484500,
               "status": "passed"
             },
             "match": {
@@ -140,17 +125,27 @@
             }
           }
         ],
-        "line": 13,
-        "name": "User Search for product from search box",
+        "line": 52,
+        "name": "validate the footer links on landing page of applications",
         "description": "",
-        "id": "e-commerce-project-web-site-health-check;user-search-for-product-from-search-box",
+        "id": "e-commerce-project-web-site-health-check;validate-the-footer-links-on-landing-page-of-applications;;3",
         "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: MicrosoftEdge\u003d112.0.1722.58)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-4HSKB02\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.58, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60967}, msedge: {msedgedriverVersion: 112.0.1722.58 (4dc3f55bfaec..., userDataDir: C:\\Users\\Dell\\AppData\\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 7f0b243d98e4b55b899e6ae2308dd071\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat project.kalyanJewellers.stepdefs.StepDefs.captureScreenShot(StepDefs.java:77)\r\n",
+              "duration": 67959400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.captureScreenShot(io.cucumber.java.Scenario)"
+            }
+          },
           {
             "output": [
               "Browser got closed"
             ],
             "result": {
-              "duration": 666959400,
+              "duration": 1269030600,
               "status": "passed"
             },
             "match": {
@@ -159,73 +154,59 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
-            "output": [
-              "User navigated to the home application url"
-            ],
             "result": {
-              "duration": 27797819200,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User navigated to the home application url",
-            "match": {
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_navigated_to_the_home_application_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "output": [
-              "User search for a product"
-            ],
-            "result": {
-              "duration": 3486815800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "User search for a product \"majestic solitaire diamond ring\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"majestic solitaire diamond ring\"",
-                  "offset": 26
-                }
-              ],
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_search_for_a_product(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d112.0.5615.121)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-4HSKB02\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\\Users\\Dell\\AppData\\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52453}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 14d997c8318abc098ec6f1a7223fa8d5\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)\r\n\tat project.kalyanJewellers.stepdefs.StepDefs.user_click_on_product(StepDefs.java:130)\r\n\tat ✽.User Click on product \"majestic solitaire diamond ring\"(classpath:features/HelthCheak.feature:17)\r\n",
-              "duration": 150907100,
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//p[text()\u003d\u0027ABOUT US\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-4HSKB02\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat project.kalyanJewellers.stepdefs.StepDefs.user_scroll_dwon_to_the_button_landing_page_of_the_application(StepDefs.java:148)\r\n\tat ✽.user scroll dwon to the button landing page of the application(classpath:features/HelthCheak.feature:45)\r\n",
+              "duration": 2380379100,
               "status": "failed"
             },
-            "line": 17,
-            "name": "User Click on product \"majestic solitaire diamond ring\"",
+            "line": 45,
+            "name": "user scroll dwon to the button landing page of the application",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"majestic solitaire diamond ring\"",
-                  "offset": 22
-                }
-              ],
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_click_on_product(java.lang.String)"
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_scroll_dwon_to_the_button_landing_page_of_the_application()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1001400,
+              "duration": 1000500,
               "status": "skipped"
             },
-            "line": 18,
-            "name": "Product Description is displayed in new tab",
+            "line": 46,
+            "name": "validate the follow us option with social media icons",
             "match": {
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.product_description_is_displayed_in_new_tab()"
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.validate_the_follow_us_option_with_social_media_icons()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998200,
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": "click on social media icons \"\u003cSocial media Name\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\u003cSocial media Name\u003e\"",
+                  "offset": 28
+                }
+              ],
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.click_on_social_media_icons(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Validating the social media Icons With Expected \"canderejewellery\" and \"canderejewellery\"",
+            "match": {},
             "keyword": "Then "
           }
         ],
@@ -237,19 +218,16 @@
             "name": "@HelthCheak"
           },
           {
-            "name": "@SearchProd"
+            "name": "@SocialMediaIcons"
           }
         ]
       },
       {
-        "start_timestamp": "2023-04-18T06:57:18.140Z",
+        "start_timestamp": "2023-04-24T18:35:11.960Z",
         "before": [
           {
-            "output": [
-              "Browser got invoked"
-            ],
             "result": {
-              "duration": 1845865500,
+              "duration": 2363546600,
               "status": "passed"
             },
             "match": {
@@ -257,17 +235,27 @@
             }
           }
         ],
-        "line": 21,
-        "name": "User is click on the Product and check the Product Details",
+        "line": 53,
+        "name": "validate the footer links on landing page of applications",
         "description": "",
-        "id": "e-commerce-project-web-site-health-check;user-is-click-on-the-product-and-check-the-product-details",
+        "id": "e-commerce-project-web-site-health-check;validate-the-footer-links-on-landing-page-of-applications;;4",
         "after": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: MicrosoftEdge\u003d112.0.1722.58)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-4HSKB02\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: org.openqa.selenium.edge.EdgeDriver\nCapabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 112.0.1722.58, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:60996}, msedge: {msedgedriverVersion: 112.0.1722.58 (4dc3f55bfaec..., userDataDir: C:\\Users\\Dell\\AppData\\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 543dcb79f0db388584715baa2831f800\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)\r\n\tat project.kalyanJewellers.stepdefs.StepDefs.captureScreenShot(StepDefs.java:77)\r\n",
+              "duration": 15989900,
+              "status": "failed"
+            },
+            "match": {
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.captureScreenShot(io.cucumber.java.Scenario)"
+            }
+          },
           {
             "output": [
               "Browser got closed"
             ],
             "result": {
-              "duration": 594634700,
+              "duration": 563911800,
               "status": "passed"
             },
             "match": {
@@ -276,89 +264,59 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
-            "output": [
-              "User navigated to the home application url"
-            ],
             "result": {
-              "duration": 11392867300,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath\u003d//p[text()\u003d\u0027ABOUT US\u0027]\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-4HSKB02\u0027, ip: \u0027192.168.1.3\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.4.1\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat project.kalyanJewellers.stepdefs.StepDefs.user_scroll_dwon_to_the_button_landing_page_of_the_application(StepDefs.java:148)\r\n\tat ✽.user scroll dwon to the button landing page of the application(classpath:features/HelthCheak.feature:45)\r\n",
+              "duration": 2457614100,
+              "status": "failed"
             },
-            "line": 23,
-            "name": "User navigated to the home application url",
+            "line": 45,
+            "name": "user scroll dwon to the button landing page of the application",
             "match": {
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_navigated_to_the_home_application_url()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "output": [
-              "User search for a product"
-            ],
-            "result": {
-              "duration": 3006163400,
-              "status": "passed"
-            },
-            "line": 24,
-            "name": "User search for a product \"majestic solitaire diamond ring\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"majestic solitaire diamond ring\"",
-                  "offset": 26
-                }
-              ],
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_search_for_a_product(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "output": [
-              "User Click on product"
-            ],
-            "result": {
-              "duration": 245462400,
-              "status": "passed"
-            },
-            "line": 25,
-            "name": "User Click on product \"majestic solitaire diamond ring\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"majestic solitaire diamond ring\"",
-                  "offset": 22
-                }
-              ],
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_click_on_product(java.lang.String)"
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.user_scroll_dwon_to_the_button_landing_page_of_the_application()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "error_message": "java.util.NoSuchElementException\r\n\tat java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)\r\n\tat java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)\r\n\tat project.kalyanJewellers.stepdefs.StepDefs.product_description_is_displayed_in_new_tab(StepDefs.java:143)\r\n\tat ✽.Product Description is displayed in new tab(classpath:features/HelthCheak.feature:26)\r\n",
-              "duration": 34978000,
-              "status": "failed"
+              "duration": 9998100,
+              "status": "skipped"
             },
-            "line": 26,
-            "name": "Product Description is displayed in new tab",
+            "line": 46,
+            "name": "validate the follow us option with social media icons",
             "match": {
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.product_description_is_displayed_in_new_tab()"
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.validate_the_follow_us_option_with_social_media_icons()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 2997900,
               "status": "skipped"
             },
-            "line": 27,
-            "name": "Select the size drop down",
+            "line": 47,
+            "name": "click on social media icons \"\u003cSocial media Name\u003e\"",
             "match": {
-              "location": "project.kalyanJewellers.stepdefs.StepDefs.select_the_size_drop_down()"
+              "arguments": [
+                {
+                  "val": "\"\u003cSocial media Name\u003e\"",
+                  "offset": 28
+                }
+              ],
+              "location": "project.kalyanJewellers.stepdefs.StepDefs.click_on_social_media_icons(java.lang.String)"
             },
-            "keyword": "And "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 999000,
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": "Validating the social media Icons With Expected \"canderebyKalyan\" and \"Candere By Kalyan jewellers\"",
+            "match": {},
+            "keyword": "Then "
           }
         ],
         "tags": [
@@ -369,7 +327,7 @@
             "name": "@HelthCheak"
           },
           {
-            "name": "@ProdDesc"
+            "name": "@SocialMediaIcons"
           }
         ]
       }

@@ -1,0 +1,9 @@
+2023-Apr-25 00:04:48 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Firefox Browser invoked
+2023-Apr-25 00:04:48 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-25 00:05:05 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-25 00:05:08 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Firefox Browser invoked
+2023-Apr-25 00:05:08 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-25 00:05:11 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed
+2023-Apr-25 00:05:14 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Firefox Browser invoked
+2023-Apr-25 00:05:14 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver maximized and implicit time out set to 20 seconds
+2023-Apr-25 00:05:17 AM [main] INFO  project.kalyanJewellers.core.WebDriverFactory - Driver closed

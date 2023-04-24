@@ -1,0 +1,6 @@
+project\kalyanJewellers\pageobjects\ProductsDisPageObjects.class
+project\kalyanJewellers\stepdefs\StepDefs.class
+project\kalyanJewellers\core\WebDriverFactory.class
+project\kalyanJewellers\pageobjects\ProductsListingPageObjects.class
+project\kalyanJewellers\pageobjects\LandingPageObjects.class
+project\kalyanJewellers\runners\TestRunner.class
